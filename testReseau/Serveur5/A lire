@@ -1,0 +1,2 @@
+Ce serveur contient un certificat SSL correct, mais le port 443 n'est pas ouvert ou un filtrage est fait.
+J'ai mis SSL sur le port 444 (ça passe si on écoute sur ce port)

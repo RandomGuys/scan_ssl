@@ -1,0 +1,3 @@
+ifup -a
+invoke-rc.d apache2 start
+

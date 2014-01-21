@@ -1,0 +1,16 @@
+ClientL[0]=H1
+
+Routeur[0]=H1
+Routeur[1]=H2
+Routeur[2]=H3
+Routeur[3]=H4
+Routeur[4]=H5
+Routeur[5]=H6
+
+Serveur[0]=H2
+Serveur2[0]=H3
+Serveur3[0]=H4
+Serveur4[0]=H5
+Serveur5[0]=H6
+
+Routeur[mem]=128

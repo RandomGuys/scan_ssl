@@ -1,0 +1,5 @@
+ifup -a
+invoke-rc.d apache2 start
+a2ensite default-ssl	
+a2enmod ssl
+invoke-rc.d apache2 restart
