@@ -1,7 +1,0 @@
-ifup -a
-invoke-rc.d apache2 start
-a2ensite default-ssl	
-a2enmod ssl
-invoke-rc.d apache2 restart
-
-echo -e "Listen 80\nListen 444" > /etc/apache2/ports.conf
