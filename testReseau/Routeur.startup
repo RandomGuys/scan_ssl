@@ -1,1 +1,2 @@
 ifup -a
+ifconfig eth1 192.168.2.1
