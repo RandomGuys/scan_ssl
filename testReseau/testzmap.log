@@ -1,0 +1,43 @@
+root@zlatan:/home/projeta/Desktop/testReseau# zmap -p 443 -w testzmap.txt -b blacklist -o result.txt -G da:8a:e6:78:49:1f -v 5 -i nk_tap_root -P 1
+Jan 22 14:54:28.518 [TRACE] zmap: zmap main thread started
+Jan 22 14:54:28.518 [TRACE] zmap: requested ouput-module: default
+
+Jan 22 14:54:28.518 [DEBUG] zmap: no output module provided. will use csv.
+Jan 22 14:54:28.518 [DEBUG] zmap: requested output field (0): saddr
+Jan 22 14:54:28.518 [INFO] zmap: started
+Jan 22 14:54:28.518 [DEBUG] zmap: no source IP address given. will use default address: 10.0.0.1.
+Jan 22 14:54:28.518 [INFO] zmap: zmap selected output module: csv
+Jan 22 14:54:28.518 [DEBUG] csv: more than one field, will add headers
+Jan 22 14:54:28.518 [TRACE] constraint: Initializing
+Jan 22 14:54:28.518 [TRACE] whitelist: blacklisting 0.0.0.0/0
+Jan 22 14:54:28.518 [TRACE] whitelisting: whitelisting 192.168.2.0/24
+Jan 22 14:54:28.518 [TRACE] constraint: Painting value 1
+Jan 22 14:54:28.542 [DEBUG] constraint: 0 IPs in radix array, 256 IPs in tree
+Jan 22 14:54:28.542 [DEBUG] blacklist: 256 addresses allowed to be scanned (0% of address space)
+Jan 22 14:54:28.542 [DEBUG] cyclic: using prime 65537, known_primroot 3
+Jan 22 14:54:28.543 [DEBUG] cyclic: primitive root: 10424
+Jan 22 14:54:28.543 [DEBUG] cyclic: starting point: 822442558
+Jan 22 14:54:28.543 [DEBUG] send: will send from 1 address on 28233 source ports
+Jan 22 14:54:28.545 [TRACE] zmap: set thread 3504764672 affinity to core 0
+Jan 22 14:54:28.545 [DEBUG] recv: thread started
+Jan 22 14:54:28.545 [DEBUG] recv: using dev nk_tap_root
+Jan 22 14:54:28.585 [DEBUG] recv: receiver ready
+Jan 22 14:54:28.585 [DEBUG] recv: duplicate responses will be excluded from output
+Jan 22 14:54:28.585 [DEBUG] recv: unsuccessful responses will be excluded from output
+Jan 22 14:54:28.585 [DEBUG] zmap: using 1 sender threads
+Jan 22 14:54:28.586 [TRACE] zmap: set thread 3414157056 affinity to core 1
+ 0:00 0%; send: 0 0 p/s (0 p/s avg); recv: 0 0 p/s (0 p/s avg); drops: 0 p/s (0 p/s avg); hits: 0.00%
+Jan 22 14:54:28.588 [TRACE] zmap: set thread 3422549760 affinity to core 0
+Jan 22 14:54:28.588 [DEBUG] send: thread started
+Jan 22 14:54:28.600 [DEBUG] send: thread finished
+Jan 22 14:54:28.603 [DEBUG] zmap: senders finished
+ 0:01 13%; send: 256 done (4.50 Kp/s avg); recv: 4 3 p/s (3 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:02 25%; send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (1 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:03 38%; send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (1 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:04 50%; send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (0 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:05 63% (3s left); send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (0 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:06 75% (2s left); send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (0 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:07 87% (1s left); send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (0 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+ 0:08 100% (0s left); send: 256 done (4.50 Kp/s avg); recv: 4 0 p/s (0 p/s avg); drops: 0 p/s (0 p/s avg); hits: 1.56%
+Jan 22 14:54:36.609 [DEBUG] recv: thread finished
+Jan 22 14:54:37.588 [INFO] zmap: completed
