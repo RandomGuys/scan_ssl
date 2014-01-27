@@ -65,9 +65,21 @@ if (-e ".status") {
 }
 
 $SIG{ALRM} = \&show_status;
-setitimer(ITIMER_REAL, 2, 5);
+setitimer(ITIMER_REAL, 2, 20);
 
+$thr_nb = 0;
 while (<ADDR>) {
+    $thr_nb++;
+    if ($thr_nb % 500 == 0) {
+        print "Waiting for child threads to join\n";
+        foreach $thr (threads->list) { 
+            # Don't join the main thread or ourselves 
+            if ($thr->tid && !threads::equal($thr, threads->self)) { 
+                $thr->join; 
+            } 
+            print "thread ", $thr->tid, " joined\n";
+        }
+    }
 	chomp;
 	$sem->down;
 	threads->create (sub {
